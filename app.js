@@ -1,17 +1,14 @@
-'use strict'
+'use strict';
 
-const express = require('express')
+const express = require('express');
 
-const PORT = 8000
-const HOST = '0.0.0.0'
+const PORT = 8000;
+const HOST = '0.0.0.0';
 
-const app = express()
+const app = express();
 app.get('/', (req, res) => {
-    res.send('bryant lie\n')
-    res.send('52021002\n')
-    res.send('Teknik Informatika\n')
-})
+    res.send('Nama: Bryant Lie\nNIM: 52021002\n Jurusan: Teknik Informatika\n');
+});
 
-app.listen(PORT, HOST)
-console.log(`Running on http://${HOST}:${PORT}`)
-
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
